@@ -96,6 +96,14 @@ html {
         color: white;
     }
 
+    .socials {
+        display: flex;
+    }
+
+    .socials a:hover {
+        background-color: transparent;
+    }
+
     /* --- Mobile footer --- */
     footer {
         display: grid;
@@ -112,6 +120,12 @@ html {
 @media screen and (min-width: 961px) {
     header img, footer img {
         width: 150px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 150px 1fr 20px;
+        padding: 20px;
     }
 
     header ul {
@@ -132,6 +146,30 @@ html {
     header ul li a:hover {
         background-color:rgb(48, 48, 48);
         color: white;
+    }
+
+    #myLinks {
+        margin: 20px 10px 10px 10px;
+    }
+
+    .currentPage {
+        background-color: red;
+    }
+
+    .home, .home a {
+        padding: 0px;
+    }
+
+    .home a:hover {
+        background-color: transparent;
+    }
+
+    .topnav a img:hover {
+        background-color: transparent;
+    }
+
+    a.icon {
+        grid-column: 2 / 3;
     }
 
     .fa-bars::before {
@@ -158,7 +196,6 @@ html {
     /* Style navigation menu links */
     .topnav a {
         color: white;
-        padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
         display: block;
@@ -166,7 +203,7 @@ html {
     
     /* Style the hamburger menu */
     .topnav a.icon {
-        background: black;
+        background: transparent;
         display: block;
         position: absolute;
         right: 0;
@@ -175,8 +212,7 @@ html {
     
     /* Add a grey background color on mouse-over */
     .topnav a:hover {
-        background-color: yellow;
-        color: white;
+        padding: 0px;
     }
 
     .topnav li a:hover {
@@ -188,15 +224,88 @@ html {
         color: white;
     }
 
+    .socials {
+        display: block;
+        grid-column: 3 / 4;
+        align-items: center;
+        padding-top: 15px;
+    }
+
+    .socials a {
+        padding: 2px;
+    }
+
+    .socials img {
+        width: 25px;
+    }
+
     /* --- Tablet footer --- */
     footer {
         display: grid;
-        grid-template: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
+        background-color:rgb(48, 48, 48);
     }
 
     footer img {
         margin: 0 auto;
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+        width: 250px;
+    }
+
+    footer h3 {
+        grid-column: 3 / 4;
+    }
+
+    footer h3.heading1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    footer .socials2 {
+        grid-column: 3 / 4;
+    }
+
+    footer .socials2 img {
+        width: 25px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 0px;
+    }
+
+    .locations {
+        padding-left: 0px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        margin-top: -8px;
+    }
+
+    h3.heading1 {
+        margin-bottom: 0px;
+        grid-column: 1 / 2;
+        height: 20px;
+    }
+
+    .locations li {
+        list-style-type: none;
+        padding-bottom: 10px;
+    }
+
+    .locations li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .locations li a:hover {
+        color: red;
+    }
+
+    footer small {
+        padding: 20px;
+        background-color: #1d1d1d;
+        grid-column: 1 / 4;
     }
 }
 
@@ -210,7 +319,8 @@ html {
 
     header {
         display: grid;
-        grid-template-columns: 250px 1fr;
+        grid-template-columns: 200px 1fr 150px;
+        padding: 20px 0px;
     }
 
     header ul {
@@ -223,6 +333,16 @@ html {
 
     .topnav #myLinks {
         background-color: transparent;
+        justify-content: space-evenly;
+    }
+
+    #myLinks {
+        margin: 0px;
+        padding-top: 35px;
+    }
+
+    #myLinks li a {
+        padding: 0px;
     }
 
     header ul li {
@@ -247,14 +367,89 @@ html {
         display: none !important;
     }
 
+    .fa:hover {
+        padding: 0px;
+    }
+
     footer {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         text-align: center;
+        background-color:rgb(48, 48, 48);
     }
 
     footer img {
-        width: 150px;
+        width: 300px;
         margin: 0 auto;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    footer small {
+        grid-column: 1 / 4;
+        padding: 10px;
+        background-color: #1d1d1d;
+    }
+
+    footer h3 {
+        text-transform: uppercase;
+        text-align: center;
+        grid-column: 3 / 4;
+    }
+
+    footer .heading1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    /* socials for header */
+    .socials {
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .socials img, .socials2 img {
+        width: 30px;
+    }
+
+    .socials a {
+        width: 25px;
+        padding: 0px;
+    }
+
+    .socials a:hover {
+        background-color: transparent;
+    }
+
+    /* Social Links for footer section */
+    .socials2 {
+        align-content: center;
+        grid-column: 3 / 4;
+    }
+
+    .socials2 img {
+        padding: 0px 20px;
+    }
+
+    /* Locations section on footer */
+    .locations {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding-left: 0px;
+        margin-top: -20px;
+    }
+
+    .locations li {
+        list-style-type: none;
+        padding-bottom: 4px;
+    }
+
+    .locations li a {
+        color: white;
+    }
+
+    .locations li a:hover {
+        color: red;
     }
 }
