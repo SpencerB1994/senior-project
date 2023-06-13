@@ -6,7 +6,7 @@ html {
 }
 
 /* Mobile Version */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) {
     /* Mobile Menu */
     header ul li {
         list-style-type: none;
@@ -109,7 +109,7 @@ html {
 }
 
 /* --- Tablet Version--- */
-@media screen and (max-width: 961px) {
+@media screen and (min-width: 961px) {
     header img, footer img {
         width: 150px;
     }
@@ -215,15 +215,20 @@ html {
 
     header ul {
         text-align: center;
-        display: flex;
         justify-content: space-around;
         align-items: center;
         padding-left: 0px;
+        display: block !important;
+    }
+
+    .topnav #myLinks {
+        background-color: transparent;
     }
 
     header ul li {
         list-style-type: none;
         text-transform: uppercase;
+        display: inline-block;
         padding: 20px;
     }
 
@@ -238,8 +243,8 @@ html {
         padding: 20px;
     }
 
-    a.icon {
-        display: none;
+    .topnav a.icon {
+        display: none !important;
     }
 
     footer {
