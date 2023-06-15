@@ -1,13 +1,45 @@
 /* Default Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
 html {
     margin: 0 auto;
     background-color: #000;
     color: white;
 }
 
+@font-face {
+    font-family: african;
+    src: url(fonts/african.ttf);
+}
+
+h1, h2, h3, h4, ul li, small {
+    font-family: 'Oswald';
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
 /* Mobile Version */
 @media screen and (min-width: 500px) {
     /* Mobile Menu */
+    header {
+        display: grid;
+        grid-template-columns: 180px 1fr 50px;
+    }
+
+    .currentPage {
+        background-color: red;
+    }
+
     header ul li {
         list-style-type: none;
         text-align: center;
@@ -22,6 +54,7 @@ html {
     header ul {
         overflow: hidden;
         position: relative;
+        margin-top: 20px;
     }
 
     /* This is to hide the navigation items on mobile */
@@ -61,6 +94,7 @@ html {
     .topnav #myLinks {
         display: none;
         background-color: rgb(48, 48, 48);
+        margin-top: 48px;
     }
   
     /* Style navigation menu links */
@@ -96,12 +130,30 @@ html {
         color: white;
     }
 
+    .home a:hover {
+        background-color: transparent;
+    }
+
     .socials {
-        display: flex;
+        grid-column: 3 / 4;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .socials a {
+        padding: 0px 0px 10px 0px;
     }
 
     .socials a:hover {
         background-color: transparent;
+    }
+
+    .socials img {
+        width: 25px;
+    }
+
+    a.icon {
+        grid-column: 2 / 3;
     }
 
     /* --- Mobile footer --- */
@@ -109,10 +161,45 @@ html {
         display: grid;
         grid-template: 1fr;
         text-align: center;
+        background-color:rgb(48, 48, 48);
     }
 
     footer img {
         margin: 0 auto;
+    }
+
+    footer h3 {
+        text-transform: uppercase;
+    }
+
+    footer small {
+        background-color:#1d1d1d;
+        padding: 10px 20px;
+    }
+
+    footer .socials2 img {
+        width: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .locations {
+        list-style-type: none;
+        padding: 0px;
+        margin-top: -10px;
+    }
+    .locations ul {
+        padding: 0px;
+    }
+
+    .locations li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .locations li a:hover {
+        color: red;
     }
 }
 
@@ -124,7 +211,7 @@ html {
 
     header {
         display: grid;
-        grid-template-columns: 150px 1fr 20px;
+        grid-template-columns: 150px 1fr 50px;
         padding: 20px;
     }
 
@@ -172,6 +259,10 @@ html {
         grid-column: 2 / 3;
     }
 
+    .icon:hover {
+        background-color: yellow;
+    }
+
     .fa-bars::before {
         color: red;
     }
@@ -203,16 +294,10 @@ html {
     
     /* Style the hamburger menu */
     .topnav a.icon {
-        background: transparent;
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-    }
-    
-    /* Add a grey background color on mouse-over */
-    .topnav a:hover {
-        padding: 0px;
     }
 
     .topnav li a:hover {
@@ -229,6 +314,7 @@ html {
         grid-column: 3 / 4;
         align-items: center;
         padding-top: 15px;
+        padding-left: 0px;
     }
 
     .socials a {
@@ -251,11 +337,12 @@ html {
         margin: 0 auto;
         grid-column: 2 / 3;
         grid-row: 1 / 4;
-        width: 250px;
+        width: 300px;
     }
 
     footer h3 {
         grid-column: 3 / 4;
+        text-transform: uppercase;
     }
 
     footer h3.heading1 {
@@ -290,7 +377,6 @@ html {
 
     .locations li {
         list-style-type: none;
-        padding-bottom: 10px;
     }
 
     .locations li a {
@@ -308,7 +394,6 @@ html {
         grid-column: 1 / 4;
     }
 }
-
 
 /* --- Desktop Version --- */
 @media screen and (min-width: 1280px) {
@@ -336,9 +421,8 @@ html {
         justify-content: space-evenly;
     }
 
-    #myLinks {
-        margin: 0px;
-        padding-top: 35px;
+    .topnav #myLinks {
+        margin-top: 35px;
     }
 
     #myLinks li a {
