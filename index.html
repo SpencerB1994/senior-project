@@ -4,14 +4,15 @@
         <title>Jurassic Park Tours</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="javascript.js" async></script>
     </head>
     <body>
         <header class="topnav">
-            <section class="home">
-                <a href="index.html"><img src="images/jurassic park logo.png" alt="Jurassic Park Logo"></a>
-            </section>
+            <div class="home">
+                <a href="index.html"><img src="images/jurassicparklogo.png" alt="Jurassic Park Logo"></a>
+            </div>
 
             <ul id="myLinks">
                 <li class="currentPage"><a href="index.html">Home</a></li>
@@ -22,11 +23,11 @@
                 <li><a href="#">Contact</a></li>
             </ul>
 
-            <section class="socials">
+            <div class="socials">
                 <a href="https://www.facebook.com/UniversalStudiosHollywood/" target="_blank"><img src="images/Facebook.png" alt="Facebook link for Jurassic Park Tours website."></a>
                 <a href="https://www.instagram.com/unistudios/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram link for Jurassic Park Tours website."></a>
                 <a href="https://twitter.com/UniStudios?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="Twitter link for Jurassic Park Tours website."></a>
-            </section>
+            </div>
             
 
             <!-- hamburger menu -->
@@ -35,19 +36,22 @@
               </a>
         </header>
 
-        <section class="mainImage">
-            <img src="images/jurassicParkEntrance500px.jpg" alt="Jurassic Park Gates">
-        </section>
+        <picture class="mainImage">
+            <source media="(max-width:500px)" srcset="images/jurassicParkEntrance500px.jpg">
+            <source media="(max-width:961px)" srcset="images/jurassicParkEntrance1961px.jpg">
+            <source media="(max-width:1280px)" srcset="images/jurassicParkEntrance1280.jpg">
+            <img src="images/jurassicParkEntrance1280.jpg" alt="Biggest Jurassic Park Entrance Image.">
+        </picture>
 
         <footer>
             <img src="images/universal-logo.png" alt="Universal Studios logo">
             
             <h3>Socials</h3>
-            <section class="socials2">
+            <div class="socials2">
                 <a href="https://www.facebook.com/UniversalStudiosHollywood/" target="_blank"><img src="images/Facebook.png" alt="Facebook link for Jurassic Park Tours website."></a>
                 <a href="https://www.instagram.com/unistudios/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram link for Jurassic Park Tours website."></a>
                 <a href="https://twitter.com/UniStudios?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/twitter.png" alt="Twitter link for Jurassic Park Tours website."></a>
-            </section>
+            </div>
 
             <h3 class="heading1">Locations</h3>
             <ul class="locations">
