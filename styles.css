@@ -157,7 +157,25 @@ h3 {
         grid-column: 2 / 3;
     }
 
-    /* --- Main Image --- */
+    /* --- Packages --- */
+    .packages {
+        padding: 20px 20px 80px 20px;
+        text-align: center;
+    }
+
+    .package1, .package2, .package3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .packages a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px 40px;
+    }
 
     /* --- Mobile footer --- */
     footer {
