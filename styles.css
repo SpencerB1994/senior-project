@@ -131,6 +131,11 @@ h3 {
         color: white;
     }
 
+    .mainImage {
+        display: block;
+        overflow: clip;
+    }
+
     .home a:hover {
         background-color: transparent;
     }
@@ -159,8 +164,14 @@ h3 {
 
     /* --- Packages --- */
     .packages {
-        padding: 20px 20px 80px 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px 60px 20px;
         text-align: center;
+    }
+
+    .packages h2 {
+        margin-bottom: 0px;
     }
 
     .package1, .package2, .package3 {
@@ -176,6 +187,117 @@ h3 {
         background-color: red;
         padding: 20px 40px;
     }
+
+    /* --- About Us Section --- */
+    .aboutUs {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .aboutUs img {
+        padding-bottom: 40px;
+    }
+
+    .aboutUs a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* --- Plan Your Trip Section --- */
+    .planTrip {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .planTrip img {
+        padding-bottom: 20px;
+    }
+
+    .planTrip a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px;
+    }
+
+    .planTrip .links a:first-child {
+        margin-right: 10px;
+    }
+
+    .planTrip .links a:last-child {
+        margin-left: 10px;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px;
+    }
+
+    /* --- Questions Callout Section --- */
+    .questions {
+        display: flex;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image:url(images/jungle500.jpg);
+        filter: hue-rotate(0deg) brightness(50%) grayscale(10%);
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .questionsCallout {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .questionsCallout a {
+        position: absolute;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px;
+        margin-left: 20px;
+        width: 400px;
+    }
+
+    .questionsCallout h2 {
+        padding-top: 70px;
+        margin-left: 160px;
+    }
+
+    /*.questions h2 {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+    /*.questions a {
+        position: absolute;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px;
+    }*/
 
     /* --- Mobile footer --- */
     footer {
