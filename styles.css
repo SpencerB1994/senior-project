@@ -66,6 +66,8 @@ p {
     header ul {
         display: none;
         padding-left: 0px;
+        margin-left: -180px;
+        margin-right: -54px;
     }
 
     header ul li a.icon {
@@ -99,7 +101,7 @@ p {
     .topnav #myLinks {
         display: none;
         background-color: rgb(48, 48, 48);
-        margin-top: 48px;
+        margin-top: 140px;
     }
   
     /* Style navigation menu links */
@@ -172,39 +174,40 @@ p {
         grid-column: 2 / 3;
     }
 
-    /* --- Packages --- */
-    .packages {
+    /* --- Attractions --- */
+    .attractions {
         display: flex;
         flex-direction: column;
         padding: 20px 0px;
         text-align: center;
     }
 
-    .packages h2 {
+    .attractions h2 {
         margin-bottom: 0px;
     }
 
-    .package1, .package2, .package3 {
+    .attraction1, .attraction2, .attraction3 {
         padding-bottom: 20px;
         text-align: center;
     }
 
-    .packages a {
+    .attractions a {
         color: white;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         background-color: red;
         padding: 20px 40px;
-        margin: 20px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .package1 img, .package2 img, .package3 img {
+    .attraction1 img, .attraction2 img, .attraction3 img {
         width: 300px;
         border: 4px solid red;
     }
 
-    .package1 p, .package2 p, .package3 p {
+    .attraction1 p, .attraction2 p, .attraction3 p {
         width: 250px;
         margin-left: auto;
         margin-right: auto;
@@ -220,6 +223,12 @@ p {
         
     }
 
+    .aboutUs p {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
     .aboutUs img {
         margin: auto;
         width: 300px;
@@ -233,8 +242,8 @@ p {
         text-transform: uppercase;
         background-color: red;
         padding: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 40px;
     }
 
@@ -271,10 +280,17 @@ p {
         margin-left: 10px;
     }
 
+    .planTrip p {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .links {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 20px;
+        margin: auto;
+        padding-top: 40px;
     }
 
     /* --- Questions Callout Section --- */
@@ -312,22 +328,6 @@ p {
         padding-top: 70px;
         margin-left: 160px;
     }
-
-    /*.questions h2 {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-    }*/
-
-    /*.questions a {
-        position: absolute;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        background-color: red;
-        padding: 20px;
-    }*/
 
     /* --- Mobile footer --- */
     footer {
@@ -373,6 +373,138 @@ p {
 
     .locations li a:hover {
         color: red;
+    }
+
+    /* --- About Us Page Styling --- */
+    .packages {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+
+    .packages h2 {
+        margin-bottom: 0px;
+    }
+
+    .package1, .package2, .package3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .packages a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .package1 img, .package3 img {
+        width: 150px;
+        
+    }
+
+    .package2 img {
+        height: 150px;
+    }
+
+    .package1 p, .package2 p, .package3 p {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        position: absolute;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 186px;
+        padding-left: 186px;
+    }
+
+    /* --- About Page - About Us Section --- */
+    .aboutUs {
+        background-image: url(images/jurassicParkEntrance500-cropped.jpg);
+        background-position: center;
+        background-size: cover;
+        border-top: 4px solid yellow;
+        border-bottom: 4px solid yellow;
+    }
+
+    .aboutUs h2 {
+        padding-top: 20px;
+    }
+
+    /* --- About Page - Plan Your Trip Section --- */
+    .aboutTrip {
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .aboutTrip img {
+        border: 4px solid red;
+        width: 300px;
+    }
+
+    .aboutTrip p {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .aboutTrip a {
+        background-color: red;
+        color: white;
+        padding: 20px 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Times New Roman';
+    }
+
+    .linksAbout {
+        margin-top: 60px;
+    }
+
+    /* --- Questions Callout Section --- */
+    .questionsAbout {
+        display: flex;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image:url(images/jungle500-dark.jpg);
+        /*filter: hue-rotate(0deg) brightness(50%) grayscale(10%);*/
+        margin-top: 40px;
+        border-top: 4px solid yellow;
+        border-bottom: 4px solid yellow;
+    }
+
+    .questionsCalloutAbout {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .questionsCalloutAbout a {
+        position: absolute;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px;
+        margin-left: 20px;
+        width: 400px;
+    }
+
+    .questionsCalloutAbout h2 {
+        padding-top: 40px;
+        margin-left: 160px;
     }
 }
 
@@ -499,26 +631,26 @@ p {
     }
 
     /* --- Tablet packages section --- */
-    .flexPackages {
+    .flexAttractions {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .packages a {
+    .attractions a {
         margin: auto;
     }
 
-    .package1, .package2, .package3 {
+    .attraction1, .attraction2, .attraction3 {
         width: 350px;
     }
 
-    .package1 p, .package2 p, .package3 p {
+    .attraction1 p, .attraction2 p, .attraction3 p {
         width: 200px;
         margin: auto;
         padding-top: 10px;
     }
 
-    .package1 img, .package2 img, .package3 img {
+    .attraction1 img, .attraction2 img, .attraction3 img {
         width: 275px;
         height: 200px;
     }
@@ -563,7 +695,7 @@ p {
     }
 
     div .links {
-        margin-top: 40px;
+        margin-top: 0px;
     }
 
     /* --- Questions Callout --- */
@@ -574,6 +706,11 @@ p {
 
     .questionsCallout {
         padding-left: 250px;
+    }
+
+    .questionsCallout h2 {
+        padding-top: 45px;
+        margin-left: 160px;
     }
 
     /* --- Tablet footer --- */
@@ -644,6 +781,149 @@ p {
         background-color: #1d1d1d;
         grid-column: 1 / 4;
     }
+
+    /* --- About Us Page Styling --- */
+    .packages {
+        display: flex;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .packages h2 {
+        margin-bottom: 0px;
+    }
+
+    .package1, .package2, .package3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .packages a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .package1 img, .package3 img {
+        width: 150px;
+        
+    }
+
+    .package2 img {
+        height: 150px;
+    }
+
+    .package1 p, .package2 p, .package3 p {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flexPackages {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        position: absolute;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        padding-right: 413px;
+        padding-left: 413px;
+        font-size: 32px;
+    }
+
+    /* --- About Page - About Section - Tablet --- */
+    .aboutUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: url(images/jurassicParkEntrance961.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-top: 4px solid yellow;
+        border-bottom: 4px solid yellow;
+    }
+
+    .aboutUs h2 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .aboutUs p {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .aboutUs a {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .aboutUs img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 5;
+        margin-top: 50px;
+    }
+
+    /* --- About Page - Plan Your Trip Section --- */
+    .aboutTrip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .aboutTrip h2 {
+        grid-column:  2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .aboutTrip p {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 300px;
+        padding-left: 90px;
+        margin-top: -20px;
+    }
+
+    .aboutTrip img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        border: 4px solid red;
+        width: 300px;
+        margin-left: 80px;
+    }
+
+    .aboutTrip a {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        background-color: red;
+        text-decoration: none;
+        color: white;
+        padding: 20px 40px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman';
+    }
+
+    /* --- About Page - Questions Section --- */
+    .questionsAbout {
+        padding: 120px;
+    }
+
+    .questionsCalloutAbout {
+        margin-left: 220px;
+    }
 }
 
 /* --- Desktop Version --- */
@@ -706,11 +986,93 @@ p {
         padding: 0px;
     }
 
-
     /* --- Plan Your Trip Section - Desktop --- */
-    div.container {
-        display: flex;
-        justify-content: space-around;
+    div.aboutUsContainer {
+        display: block;
+    }
+
+    /* --- About page - about section --- */    
+    .aboutUs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 200px;
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-image: url(images/jurassicParkEntrance1280\ \(1\).jpg);
+        /*filter: hue-rotate(0deg) brightness(50%) grayscale(10%);*/
+        z-index: 0;
+        border-top: 4px solid yellow;
+        border-bottom: 4px solid yellow;
+    }
+
+    .aboutUs h2 {
+        grid-column: 1 / 2;
+    }
+
+    .aboutUs img {
+        grid-column: 2 / 3;
+        grid-row: 1 / 4;
+    }
+
+    .aboutUs p {
+        grid-column: 1 / 2;
+        width: 450px;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .aboutUs a {
+        margin-top: 140px;
+    }
+
+    /* --- About page - Plan Your Trip Section --- */
+    .aboutTrip {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+        width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        height: 350px;
+    }
+
+    .aboutTrip h2 {
+        grid-column: 2 / 3;
+    }
+
+    .aboutTrip img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        width: 300px;
+        margin-left: 170px;
+        border: 4px solid red;
+    }
+
+    .aboutTrip p {
+        grid-column: 2 / 3;
+        padding-left: 150px;
+        padding-top: 40px;
+        text-align: left;
+    }
+
+    .linksAbout {
+        padding: 20px 40px;
+    }
+
+    .linksAbout a {
+        background-color: red;
+        color: white;
+        font-family: 'Times New Roman';
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 20px 40px;
     }
 
     /* --- Footer Section - Desktop --- */
@@ -744,9 +1106,10 @@ p {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
     }
-
+    
     .questions {
-        background-image: url(images/jungle1280.jpg);
+        display: flex;
+        background-image: url(images/jungle1280-dark.jpg);
     }
 
     .questionsCallout {
@@ -802,5 +1165,69 @@ p {
 
     .locations li a:hover {
         color: red;
+    }
+
+    /* --- About Us Page Styling --- */
+    .packages {
+        display: flex;
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .packages h2 {
+        margin-bottom: 0px;
+    }
+
+    .package1, .package2, .package3 {
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .packages a {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: red;
+        padding: 20px 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .package1 img, .package3 img {
+        width: 150px;
+        
+    }
+
+    .package2 img {
+        height: 150px;
+    }
+
+    .package1 p, .package2 p, .package3 p {
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .flexPackages {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h1 {
+        position: absolute;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        padding-right: 582px;
+        padding-left: 582px;
+    }
+
+    .questionsAbout {
+        padding: 120px;
+        text-align: center;
+    }
+
+    .questionsCalloutAbout {
+        margin-left: 400px;
     }
 }
