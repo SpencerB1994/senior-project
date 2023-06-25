@@ -188,6 +188,14 @@ h3 {
         padding: 20px 40px;
     }
 
+    .package1 img, .package3 img {
+        width: 150px;
+    }
+
+    .package2 img {
+        height: 150px;
+    }
+
     /* --- About Us Section --- */
     .aboutUs {
         display: flex;
@@ -468,6 +476,48 @@ h3 {
         width: 25px;
     }
 
+    /* --- Tablet packages section --- */
+    .flexPackages {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .package1, .package2, .package3 {
+        width: 200px;
+    }
+
+    .package1 img, .package3 img {
+        width: 150px;
+    }
+
+    .package2 img {
+        height: 150px;
+    }
+
+    /* --- flex plan trip and about sections --- */
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .aboutUs {
+        margin-right: 10px;
+    }
+
+    .container .planTrip {
+        margin-left: 10px;
+    }
+
+    .container .planTrip img {
+        height: 375px;
+        overflow: clip;
+    }
+
+    /* --- Questions Callout --- */
+    .questionsCallout {
+        padding-left: 250px;
+    }
+
     /* --- Tablet footer --- */
     footer {
         display: grid;
@@ -598,6 +648,14 @@ h3 {
         padding: 0px;
     }
 
+
+    /* --- Plan Your Trip Section - Desktop --- */
+    div.container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* --- Footer Section - Desktop --- */
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -627,6 +685,14 @@ h3 {
     footer .heading1 {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+    }
+
+    .questions {
+        background-image: url(images/jungle1280.jpg);
+    }
+
+    .questionsCallout {
+        padding-left: 400px;
     }
 
     /* socials for header */
