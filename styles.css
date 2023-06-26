@@ -33,6 +33,10 @@ p {
     font-size: 18px;
 }
 
+.required {
+    color: red;
+}
+
 /* Mobile Version */
 @media screen and (min-width: 500px) {
     /* Mobile Menu */
@@ -703,6 +707,48 @@ p {
         display: none;
         overflow: hidden;
     }
+
+    /* --- Contact Page Mobile Styling --- */
+    .contactTitle {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .contactPageForm {
+        position: absolute;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 80px;
+        margin-top: 120px;
+        background-color:rgb(29, 29, 29, 0.8);
+        border: 1px solid red;
+        width: 300px;
+    }
+
+    .contactPageForm input[type="text"] {
+        margin-bottom: 20px;
+        height: 40px;
+    }
+
+    .contactPageForm input[type="text"]:last-child {
+        margin-bottom: 20px;
+    }
+
+    .contactPageForm input[type="submit"] {
+        background-color: red;
+        color: white;
+        text-transform: uppercase;
+        padding: 20px 40px;
+        border: none;
+    }
+
+    .contactPageForm label {
+        font-family: 'Oswald';
+        font-size: 25px;
+    }
 }
 
 /* --- Tablet Version--- */
@@ -1280,6 +1326,30 @@ p {
         padding-left: 450px;
         padding-right: 450px;
     }
+
+    /* --- Contact Page Tablet Styling --- */
+    .contactTitle {
+        padding-top: 50px;
+        padding-bottom: 25px;
+        padding-left: 420px;
+        padding-right: 420px;
+    }
+
+    .contactPageForm {
+        margin-left: 200px;
+        margin-top: 150px;
+        width: 500px;
+    }
+
+    .contactPageForm input[type="text"] {
+        font-size: 25px;
+        height: 40px;
+    }
+
+    .contactPageForm label {
+        font-size: 25px;
+        font-family: 'Oswald';
+    }
 }
 
 /* --- Desktop Version --- */
@@ -1688,5 +1758,29 @@ p {
         padding-bottom: 225px;
         padding-left: 610px;
         padding-right: 610px;
+    }
+
+    /* --- Contact Page Tablet Styling --- */
+    .contactTitle {
+        padding-top: 100px;
+        padding-bottom: 25px;
+        padding-left: 580px;
+        padding-right: 580px;
+    }
+
+    .contactPageForm {
+        margin-left: 280px;
+        margin-top: 240px;
+        width: 700px;
+    }
+
+    .contactPageForm label {
+        font-size: 25px;
+        font-family: 'Oswald';
+    }
+
+    .contactPageForm input[type="text"] {
+        height: 40px;
+        font-size: 25px;
     }
 }

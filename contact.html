@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Jurassic Park Tours | FAQ</title>
+        <title>Jurassic Park Tours | Contact</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
@@ -19,8 +19,8 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="attractions.html">Attractions</a></li>
                 <li><a href="planYourTrip.html">Plan Your Trip</a></li>
-                <li class="currentPage"><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li class="currentPage"><a href="contact.html">Contact</a></li>
             </ul>
 
             <div class="socials">
@@ -37,36 +37,30 @@
         </header>
 
         <!-- Main Image -->
-        <h1 class="faqTitle">FAQ</h1>
+        <h1 class="contactTitle">Contact</h1>
+
+        <form class="contactPageForm">
+            <label for="fName">First Name:<span class="required">*</span></label>
+            <input type="text" id="fName" name="fName">
+            
+            <label for="lName">Last Name:<span class="required">*</span></label>
+            <input type="text" id="lName" name="lName">
+
+            <label for="emailInput">Email Address:<span class="required">*</span></label>
+            <input type="text" id="emailInput" name="emailInput">
+
+            <label for="messageBox">Message:<span class="required">*</span></label>
+            <input type="text" id="messageBox" name="messageBox">
+
+            <input type="submit" value="Submit">
+        </form>
 
         <picture class="mainImage">
-            <source media="(max-width:500px)" srcset="images/jungleRiver500.jpg">
-            <source media="(max-width:961px)" srcset="images/jungleRiver961.jpg" width="961px">
-            <source media="(max-width:1280px)" srcset="images/jungleRiver1280.jpg">
-            <img src="images/jungleRiver1280.jpg" alt="River in a jungle with a fallen tree creating a natural bridge.">
+            <source media="(max-width:500px)" srcset="images/contactImage500v5.jpg">
+            <source media="(max-width:961px)" srcset="images/contactImage961.jpg" width="961px">
+            <source media="(max-width:1280px)" srcset="images/contactImage1280.jpg">
+            <img src="images/contactImage1280.jpg" alt="People getting soaked on the last drop on the Jurassic Park river ride.">
         </picture>
-
-        <div class="accordionContainer">
-            <button class="accordion">What dinosaurs can I see in the park?</button>
-            <div class="panel">
-                <p>We have several different species of dinosaur on the island within the park. Some would include stegosaurs, brachiosaurs, dilophosaurus', and many others. You'll have to come to the parks to see the rest!</p>
-            </div>
-
-            <button class="accordion">Are the fences really enough to keep the park safe for visitors?</button>
-            <div class="panel">
-                <p>Yes! Our fences and paddocks are specifically designed with your safety in mind. 10,000 volts of electricity in the fences as well as tour vehicles with state of the art electonics and protective shells that will protect you and your loved ones from harm should there be a containment breach. We also spared no expense when we designed the paddocks. Large ravines that will prevent our animals from escaping were built near fencing where guests will be, so that the maximum amount of safety was achieved.</p>
-            </div>
-
-            <button class="accordion">How do I get there?</button>
-            <div class="panel">
-                <p>Excellent question! We have several services that you can use through our customer service line. If you are visiting the park though, you'll only have one of two options. One of them is a boat ride from Costa Rica's main island, another is a short helicopter ride where you'll land in our designated landing strip and drive in from there with our escort team.</p>
-            </div>
-
-            <button class="accordion">Are there blackout days?</button>
-            <div class="panel">
-                <p>No we don't have any days where you can't come to the park but there are specific areas that you can't go to depending on the level of your package.</p>
-            </div>
-        </div>
 
         <footer class="yellowLinesFAQ">
             <img src="images/universal-logo.png" alt="Universal Studios logo">
