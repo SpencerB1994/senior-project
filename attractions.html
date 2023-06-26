@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Jurassic Park Tours | Home</title>
+        <title>Jurassic Park Tours | Attractions</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta charset="UTF-8">
@@ -15,9 +15,9 @@
             </div>
 
             <ul id="myLinks">
-                <li class="currentPage"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
+                <li class="currentPage"><a href="attractions.html">Attractions</a></li>
                 <li><a href="planYourTrip.html">Plan Your Trip</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact</a></li>
@@ -37,65 +37,43 @@
         </header>
 
         <!-- Main Image -->
+        <h1 class="attractionsTitle">Attractions</h1>
+
         <picture class="mainImage">
-            <source media="(max-width:500px)" srcset="images/jurassicParkEntrance2-500px.jpg">
-            <source media="(max-width:961px)" srcset="images/jurassicParkEntrance2-961px.jpg" width="961px">
-            <source media="(max-width:1280px)" srcset="images/jurassicParkEntrance2-1280px.jpg">
-            <img src="images/jurassicParkEntrance2-1280px.jpg" alt="Biggest Jurassic Park Entrance Image.">
+            <source media="(max-width:500px)" srcset="images/rollercoaster500.jpg">
+            <source media="(max-width:961px)" srcset="images/rollercoaster961.jpg" width="961px">
+            <source media="(max-width:1280px)" srcset="images/rollercoaster1280.jpg">
+            <img src="images/rollercoaster1280.jpg" alt="Closeup of people on a rollercoaster.">
         </picture>
 
-        <!-- Current Packages -->
-        <section class="attractions">
-            <h2>Attractions</h2>
-
-            <div class="flexAttractions">
-                <section class="attraction1">
-                    <h3>Park Tour</h3>
-                    <img src="images/tourVehicles.png">
+        <section class="attractionsListContainer">
+            <div class="attractionsList">
+                <section class="attractionNo1">
+                    <h2>Park Tour</h2>
+                    <img src="images/tourVehicles.png" alt="Tour vehicles parked outside the Trex paddock.">
                     <p>Tour the entire park with your family and see our spectacular animals!</p>
                 </section>
 
-                <section class="attraction2">
-                    <h3>Process Tour</h3>
-                    <img src="images/processTour.jpg">
+                <section class="attractionNo2">
+                    <h2>Process Tour</h2>
+                    <img src="images/processTour.jpg" alt="Mr. Hammond and guests showing off his newest additions to the park.">
                     <p>See how the dinosaurs are made and what lengths Jurassic Park goes to make the park safe.</p>
                 </section>
 
-                <section class="attraction3">
-                    <h3>Pteranadon Flyers</h3>
-                    <img src="images/pteranodonFlyers.jpg">
+                <section class="attractionNo3">
+                    <h2>Pteranodon Flyers</h2>
+                    <img src="images/pteranodonFlyers.jpg" alt="Mother and daughter riding Pteranodon Flyers together with excitment.">
                     <p>One of our most popular rides in the park where you and one other person fly with a Pteranadon!</p>
                 </section>
             </div>
-
-            <a href="#">Try Our Custom Packages</a>
         </section>
 
-        <div class="container">
-            <section class="aboutUs">
-                <h2>About Us</h2>
-                <p>Mr. Hammond is a entrepeneaur and a business man. Making the most out of new innovations and tech.</p>
-                <img src="images/richardAttenborough.jpg (1200×1200).png" alt="Richard Attenborough.">
-                <a href="#">Learn More</a>
-            </section>
-
-            <section class="planTrip">
-                <h2>Plan Your Trip</h2>
-                <p>Check out our packages to see what works for your family.</p>
-                <img src="images/travelling.jpg" alt="Island drone picture.">
-                <div class="links">
-                    <a href="#">Start Planning</a>
-                    <a href="#">FAQ</a>
-                </div>
-            </section>
-        </div>
-
-        <div class="questionsCallout">
+        <div class="questionsCalloutAttractions">
             <h2>Have questions?</h2>
-            <a href="#">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
-        <section class="questions">
+        <section class="questionsAbout">
         </section>
 
         <footer>
