@@ -658,6 +658,51 @@ p {
     .questionsAbout {
         margin-top: 0px;
     }
+
+    /* --- FAQ Page Styling --- */
+    .faqTitle {
+        padding-left: 220px;
+        padding-right: 220px;
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    .accordionContainer {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .yellowLinesFAQ {
+        border-top: 4px solid yellow;
+    }
+
+    .accordion {
+        background-color: grey;
+        color: white;
+        font-family: 'Oswald';
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.5s
+    }
+
+    .active, .accordion:hover {
+        background-color: red;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        color: black;
+        display: none;
+        overflow: hidden;
+    }
 }
 
 /* --- Tablet Version--- */
@@ -1167,6 +1212,74 @@ p {
         text-transform: uppercase;
         margin-top: 40px;
     }
+
+    /* --- Plan Trip Page - Tablet --- */
+    .planYourTripTitle {
+        padding-left: 378px;
+        padding-right: 378px;
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .packages {
+        padding-bottom: 50px;
+    }
+
+    .formSection {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formSection h2 {
+        margin-top: 0px;
+    }
+
+    .tabletFormat {
+        padding-right: 50px;
+    }
+
+    .questionsCalloutPlanTrip {
+        padding-top: 40px;
+        padding-left: 380px;
+    }
+
+    .accordionContainer {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .accordion {
+        background-color: grey;
+        color: white;
+        font-family: 'Oswald';
+        font-size: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.5s
+    }
+
+    .active, .accordion:hover {
+        background-color: red;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        color: black;
+        display: none;
+        overflow: hidden;
+    }
+
+    .faqTitle {
+        padding-top: 155px;
+        padding-bottom: 155px;
+        padding-left: 450px;
+        padding-right: 450px;
+    }
 }
 
 /* --- Desktop Version --- */
@@ -1532,5 +1645,48 @@ p {
         text-decoration: none;
         text-transform: uppercase;
         margin-top: 40px;
+    }
+
+    /* --- Plan Trip Page - Desktop --- */
+    .packages {
+        padding-bottom: 60px;
+    }
+
+    .attractionsCallout {
+        background-image: url(images/rollercoaster2-1280.jpg);
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .tabletFormat {
+        padding-right: 200px;
+    }
+
+    .questionsCalloutPlanTrip {
+        padding-left: 550px;
+    }
+
+    .questionsAbout {
+        background-image: url(images/jungle1280-dark.jpg);
+    }
+
+    .planYourTripTitle {
+        padding-left: 548px;
+        padding-right: 548px;
+        padding-top: 135px;
+        padding-bottom: 135px;
+    }
+
+    /* --- FAQ - Desktop Version Styling --- */
+    .accordionContainer {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .faqTitle {
+        padding-top: 225px;
+        padding-bottom: 225px;
+        padding-left: 610px;
+        padding-right: 610px;
     }
 }
