@@ -58,7 +58,7 @@ input[type=submit]:hover {
 }
 
 /* Mobile Version */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 350px) {
     /* Mobile Menu */
     header {
         display: grid;
