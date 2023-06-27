@@ -33,8 +33,28 @@ p {
     font-size: 18px;
 }
 
-.required {
+.required, #formErrors {
     color: red;
+}
+
+#formErrors {
+    margin-top: 10px;
+}
+
+input[type=text]:focus {
+    background-color: rgb(255, 255, 140);
+}
+
+input.error  {
+    border: 2px solid red;
+}
+
+input[type=submit]:hover {
+    background-color: #07d;
+}
+
+.hide {
+	display: none;
 }
 
 /* Mobile Version */
