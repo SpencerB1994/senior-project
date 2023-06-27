@@ -16,7 +16,7 @@ function randomWinner(event) {
   for (i = 0; i < arr.length; i++) {
     if (randomCountry === 'United States' || randomCountry === 'Canada') {
       eli.push('You are eligible for a direct flight!');
-      eli.classList.add("error");
+      eli.classList.add("success");
     } else {
       eli.push('You are not eligible for a direct flight.');
     }
@@ -91,5 +91,10 @@ function validateForm(event) {
 
 document.getElementById("submit").addEventListener("click", function(event) {
   validateForm();
+  event.preventDefault();
+});
+
+document.getElementsByClassName("eligibility").addEventListener("click", function(event) {
+  randomWinner();
   event.preventDefault();
 });
