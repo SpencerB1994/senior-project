@@ -1128,7 +1128,8 @@ input[type=submit]:hover {
     }
 
     .aboutUs h1 {
-        padding: 140px 300px;
+        position: absolute;
+        padding: 140px 00px;
     }
 
 
