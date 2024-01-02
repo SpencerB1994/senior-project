@@ -1487,11 +1487,11 @@ input[type=submit]:hover {
         grid-column: 1 / 2;
         width: 450px;
         text-align: left;
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .aboutUs a {
-        margin-top: 145px;
+        margin-top: 45px;
     }
 
     /* --- About page - Plan Your Trip Section --- */
