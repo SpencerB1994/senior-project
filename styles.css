@@ -178,7 +178,6 @@ input[type=submit]:hover {
 
     .socials {
         grid-column: 3 / 4;
-        padding-left: 0px;
         padding-top: 20px;
     }
 
