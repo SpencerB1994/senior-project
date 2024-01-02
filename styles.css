@@ -1487,7 +1487,7 @@ input[type=submit]:hover {
         grid-column: 1 / 2;
         width: 450px;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .aboutUs a {
@@ -1522,7 +1522,6 @@ input[type=submit]:hover {
 
     .aboutTrip p {
         grid-column: 2 / 3;
-        padding-left: 150px;
         padding-top: 40px;
         text-align: left;
     }
