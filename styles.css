@@ -1127,6 +1127,11 @@ input[type=submit]:hover {
         border-bottom: 4px solid yellow;
     }
 
+    .aboutUs h1 {
+        padding: 140px 300px;
+    }
+
+
     .aboutUs h2 {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
